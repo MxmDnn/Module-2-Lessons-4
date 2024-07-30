@@ -1,8 +1,10 @@
 primes = []
 not_primes = []
 numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-for i in range(2,len(numbers)+1):
+for i in numbers:
     is_primes = True
+    if i == 1 :
+        continue
     for j in range(2,i):
         if i % j == 0 :
             is_primes = False
